@@ -6,13 +6,14 @@ import (
 	"os"
 	"testing"
 
-	api "github.com/alaflca/elevenlog/api/v1"
+	api "github.com/alaflatca/elevenlog/api/v1"
 	"github.com/stretchr/testify/require"
 )
 
 func TestSegemnt(t *testing.T) {
 	dir, err := os.MkdirTemp("./", "segemnt_test")
 	require.NoError(t, err)
+	defer os.RemoveAll(dir)
 
 	c := Config{}
 	c.Segment.MaxIndexBytes = entWidth * 4

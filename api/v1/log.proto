@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package elevenlog.v1;
 
-option go_package = "github.com/alaflca/elevenlog/api/v1";
+option go_package = "github.com/alaflatca/elevenlog/api/v1";
 
 service Log {
     rpc Produce(ProduceRequest) returns (ProduceResponse) {}
@@ -28,4 +28,6 @@ message ConsumeResponse {
 message Record {
     bytes value = 1;
     uint64 offset = 2;
+    uint64 term = 3;
+    uint32 type = 4;
 }

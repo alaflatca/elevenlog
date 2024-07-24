@@ -5,7 +5,7 @@ import (
 	"os"
 	"path"
 
-	api "github.com/alaflca/elevenlog/api/v1"
+	api "github.com/alaflatca/elevenlog/api/v1"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	api "github.com/alaflca/elevenlog/api/v1"
+	api "github.com/alaflatca/elevenlog/api/v1"
 )
 
 type Log struct {
